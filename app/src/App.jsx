@@ -1,6 +1,7 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import Age from './components/your-age/Age'
 import './app.scss'
+import Planets from './components/planets/Planets';
 
 class App extends Component {
   constructor(props) {
@@ -23,7 +24,12 @@ class App extends Component {
 
   render() {
     const { age } = this.state
-    return <Age age={age} onAgeChange={this.setAge} />
+    return (
+      <Fragment>
+        <Planets />
+        <Age age={age} onAgeChange={this.setAge} />
+      </Fragment>
+    )
   }
 }
 
