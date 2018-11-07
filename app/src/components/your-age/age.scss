@@ -1,0 +1,19 @@
+.age {
+  background-color: silver;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+
+  p,
+  input {
+    flex: 0 0 auto;
+    margin: 0 0.5rem;
+  }
+
+  input {
+    width: 4rem;
+    text-align: center;
+  }
+}
