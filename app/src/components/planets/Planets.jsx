@@ -1,7 +1,7 @@
 import React from 'react'
+import Planet from './planet/Planet'
+import './planets.scss'
 
-const Planets = ({}) => {
-  return <div>Hello Planets!</div>
-}
+const Planets = ({planets}) => <div className="planets">{planets.map(planet => <Planet {...planet}></Planet>)}</div>
 
 export default Planets

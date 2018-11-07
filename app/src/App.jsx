@@ -2,16 +2,23 @@ import React, { Component, Fragment } from 'react'
 import Age from './components/your-age/Age'
 import './app.scss'
 import Planets from './components/planets/Planets';
+import api from './services/api'
 
 class App extends Component {
   constructor(props) {
     super(props)
 
     this.state = {
-      age: 25
+      age: 25,
+      planets: []
     }
 
     this.setAge = this.setAge.bind(this)
+  }
+
+  componentDidMount() {
+    const planets = api();
+    this.setState({planets})
   }
 
   setAge(age) {
@@ -23,10 +30,10 @@ class App extends Component {
   }
 
   render() {
-    const { age } = this.state
+    const { age, planets } = this.state
     return (
       <Fragment>
-        <Planets />
+        <Planets planets={planets} />
         <Age age={age} onAgeChange={this.setAge} />
       </Fragment>
     )
