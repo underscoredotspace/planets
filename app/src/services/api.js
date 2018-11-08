@@ -1,46 +1,55 @@
 const planets = [
   {
-    name: 'Mercury',
+    name: 'earth',
+    orbit: 1,
     image:
       'https://upload.wikimedia.org/wikipedia/commons/d/d9/Mercury_in_color_-_Prockter07-edit1.jpg'
   },
   {
-    name: 'Mars',
-    image:
-      'https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg'
-  },
-  {
-    name: 'Mercury',
+    name: 'mercury',
+    orbit: 0.2408467,
     image:
       'https://upload.wikimedia.org/wikipedia/commons/d/d9/Mercury_in_color_-_Prockter07-edit1.jpg'
   },
   {
-    name: 'Mars',
-    image:
-      'https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg'
-  },
-  {
-    name: 'Mercury',
+    name: 'venus',
+    orbit: 0.61519726,
     image:
       'https://upload.wikimedia.org/wikipedia/commons/d/d9/Mercury_in_color_-_Prockter07-edit1.jpg'
   },
   {
-    name: 'Mars',
-    image:
-      'https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg'
-  },
-  {
-    name: 'Mercury',
+    name: 'mars',
+    orbit: 1.888158,
     image:
       'https://upload.wikimedia.org/wikipedia/commons/d/d9/Mercury_in_color_-_Prockter07-edit1.jpg'
   },
   {
-    name: 'Mars',
+    name: 'jupiter',
+    orbit: 11.862615,
     image:
-      'https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg'
+      'https://upload.wikimedia.org/wikipedia/commons/d/d9/Mercury_in_color_-_Prockter07-edit1.jpg'
   },
   {
-    name: 'Mercury',
+    name: 'saturn',
+    orbit: 29.447498,
+    image:
+      'https://upload.wikimedia.org/wikipedia/commons/d/d9/Mercury_in_color_-_Prockter07-edit1.jpg'
+  },
+  {
+    name: 'uranus',
+    orbit: 84.016846,
+    image:
+      'https://upload.wikimedia.org/wikipedia/commons/d/d9/Mercury_in_color_-_Prockter07-edit1.jpg'
+  },
+  {
+    name: 'neptune',
+    orbit: 164.79132,
+    image:
+      'https://upload.wikimedia.org/wikipedia/commons/d/d9/Mercury_in_color_-_Prockter07-edit1.jpg'
+  },
+  {
+    name: 'pluto',
+    orbit: 248,
     image:
       'https://upload.wikimedia.org/wikipedia/commons/d/d9/Mercury_in_color_-_Prockter07-edit1.jpg'
   }

@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react'
 import Age from './components/your-age/Age'
 import './app.scss'
-import Planets from './components/planets/Planets';
+import Planets from './components/planets/Planets'
 import api from './services/api'
 
 class App extends Component {
@@ -14,11 +14,11 @@ class App extends Component {
     }
 
     this.setAge = this.setAge.bind(this)
+    this.selectPlanet = this.selectPlanet.bind(this)
   }
 
   componentDidMount() {
-    const planets = api();
-    this.setState({planets})
+    this.setState({ planets: api() })
   }
 
   setAge(age) {
@@ -29,11 +29,20 @@ class App extends Component {
     this.setState({ age })
   }
 
+  selectPlanet(planetToSelect) {
+    const { planets } = this.state
+    for (const planet of planets) {
+      planet.selected = planet === planetToSelect
+    }
+
+    this.setState({ planets })
+  }
+
   render() {
     const { age, planets } = this.state
     return (
       <Fragment>
-        <Planets planets={planets} />
+        <Planets planets={planets} selectPlanet={this.selectPlanet} />
         <Age age={age} onAgeChange={this.setAge} />
       </Fragment>
     )
